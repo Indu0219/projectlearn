@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transparent Login Form HTML CSS</title>
+	<style>
+        * {
+	box-sizing: border-box;
+}
+body {
+	font-family: poppins;
+	font-size: 16px;
+	color: #fff;
+}
+.form-box {
+	background-color: rgba(0, 0, 0, 0.8);
+	margin: auto auto;
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #000;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 500px;
+	height: 430px;
+}
+.form-box:before {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.2)),url("https://e1.pxfuel.com/desktop-wallpaper/464/944/desktop-wallpaper-best-bookshelf-%C2%B7-book-self-thumbnail.jpg");
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+	content: "";
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	display: block;
+	
+}
+.form-box .header-text {
+	font-size: 32px;
+	font-weight: 600;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.form-box input {
+	margin: 10px 0px;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+	font-family: poppins;
+}
+.form-box input[type=checkbox] {
+	display: none;
+}
+.form-box label {
+	position: relative;
+	margin-left: 5px;
+	margin-right: 10px;
+	top: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.form-box label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #ddd;
+}
+.form-box input[type=checkbox]:checked+label:before {
+	content: "\2713";
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	line-height: 20px;
+}
+.form-box span {
+	font-size: 14px;
+}
+.form-box button {
+	background-color: rgb(35, 36, 36);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 20px 0px;
+}
+span a {
+	color: #BBB;
+}
+
+    </style>
+	
+</head>
+<body>
+	<div class="form-box">
+		<div class="header-text">
+			"Focus on your goal"
+		</div><input placeholder="Your Email Address" type="text">
+         <input placeholder="Your Password" type="password">
+          <input id="terms" type="checkbox"> <label for="terms">
+          </label><span>Agree with <a href="#">Terms & Conditions</a></span>
+           <button><a href="menupage.html" style="color: white; text-decoration: uppercase;" > LOGIN</a></button>
+	</div>
+</body>
+</html>
